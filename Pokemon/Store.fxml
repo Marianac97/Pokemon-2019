@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.Store">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="624.0" layoutX="-27.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/StoreBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="72.0" layoutX="490.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/BackLabel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackBT" layoutX="490.0" layoutY="416.0" mnemonicParsing="false" onAction="#BackBT" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: none;" text="            " />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Pokeball.png" />
+         </image>
+      </ImageView>
+      <TextField editable="false" layoutX="218.0" layoutY="196.0" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: none; -fx-font-style: red;" text="5 coins">
+         <font>
+            <Font name="Rockwell" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BuyBT" layoutX="243.0" layoutY="233.0" mnemonicParsing="false" onAction="#BuyBT" style="-fx-background-color: red;" text="BUY" />
+   </children>
+</Pane>

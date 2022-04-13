@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.BfOcean">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="830.0" layoutX="-183.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/OceanField.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PokemonViewF" fitHeight="150.0" fitWidth="200.0" layoutX="361.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="186.0" fitWidth="265.0" layoutX="-4.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Level.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="LevelOpTxt" editable="false" layoutX="173.0" layoutY="53.0" onAction="#GetPoke" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="NameOpTxt" editable="false" layoutX="38.0" layoutY="47.0" onAction="#GetPoke" prefHeight="28.0" prefWidth="123.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="28.0" fitWidth="79.0" layoutX="491.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/runbtlay.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="123.0" layoutX="336.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/fbti.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CatchPokemonBT" fitHeight="28.0" fitWidth="95.0" layoutX="415.0" layoutY="417.0" onDragDetected="#CatchPokemon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/PokeballBT.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="380.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/myLevel.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="MyProgressBar" layoutX="452.0" layoutY="370.0" prefHeight="13.0" prefWidth="114.0" progress="1.0" />
+      <ProgressBar fx:id="OpProgressBar" layoutX="94.0" layoutY="82.0" prefHeight="13.0" prefWidth="114.0" progress="1.0" />
+      <TextField fx:id="MyNameTxt" editable="false" layoutX="418.0" layoutY="347.0" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="28.0" fitWidth="161.0" layoutX="258.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pkmonL.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="MyLevelTxt" editable="false" layoutX="542.0" layoutY="344.0" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BackBT" layoutX="491.0" layoutY="413.0" mnemonicParsing="false" onAction="#BackBT" prefHeight="35.0" prefWidth="79.0" style="-fx-background-color: none;" text="          " />
+      <Button fx:id="FightBT" layoutX="334.0" layoutY="417.0" mnemonicParsing="false" onAction="#Fight" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+      <Button fx:id="CatchPKBT" layoutX="415.0" layoutY="418.0" mnemonicParsing="false" onAction="#CatchPokemon" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+      <Button fx:id="ChangePBT" layoutX="258.0" layoutY="420.0" mnemonicParsing="false" onAction="#ChangePBT" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+   </children>
+</Pane>

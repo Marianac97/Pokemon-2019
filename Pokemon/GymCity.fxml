@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pokemon.GymCity">
+   <children>
+      <ImageView fitHeight="612.0" fitWidth="626.0" layoutX="-56.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Fuchsia_Gym_Battlefield.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="99.0" layoutX="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Carlos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="272.0" fitWidth="253.0" layoutX="90.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Gyarados.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="NameTxt" editable="false" layoutX="400.0" layoutY="30.0" prefHeight="42.0" prefWidth="157.0" style="-fx-background-color: none; -fx-text-fill: blue;">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LevelTxt" editable="false" layoutX="400.0" layoutY="75.0" style="-fx-background-color: none; -fx-text-fill: red;">
+         <font>
+            <Font name="Rockwell" size="20.0" />
+         </font></TextField>
+      <ImageView fitHeight="200.0" fitWidth="261.0" layoutX="-7.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Level.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="NmPTxt" editable="false" layoutX="9.0" layoutY="215.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LvPTxt" editable="false" layoutX="175.0" layoutY="216.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="28.0" fitWidth="123.0" layoutX="467.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/fbti.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="FightBT" layoutX="465.0" layoutY="418.0" mnemonicParsing="false" onAction="#Fight" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="375.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/myLevel.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="OpProgressBar" layoutX="89.0" layoutY="244.0" prefHeight="13.0" prefWidth="109.0" progress="1.0" />
+      <TextField fx:id="MyNameTxt" editable="false" layoutX="416.0" layoutY="362.0" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <ProgressBar fx:id="MyProgressBar" layoutX="449.0" layoutY="389.0" prefHeight="13.0" prefWidth="114.0" progress="1.0" />
+      <ImageView fitHeight="28.0" fitWidth="161.0" layoutX="388.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pkmonL.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="FightBT1" layoutX="471.0" layoutY="416.0" mnemonicParsing="false" onAction="#Fight" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+      <Button fx:id="ChangePBT" layoutX="387.0" layoutY="420.0" mnemonicParsing="false" onAction="#ChangePBT" prefHeight="27.0" prefWidth="79.0" style="-fx-background-color: none;" />
+      <TextField fx:id="MyLevelTxt" editable="false" layoutX="537.0" layoutY="364.0" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="OpLevelTxt" editable="false" layoutX="182.0" layoutY="147.0" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: none;">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
